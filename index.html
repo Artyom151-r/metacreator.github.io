@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Creator - Create Your Minecraft Launcher</title>
+          <link rel="stylesheet" href="styles.css">
+      <link rel="icon" href="meta_logo.jpg">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <!-- Основной шрифт -->
+      <link href="https://fonts.googleapis.com/css2?family=gg+sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <!-- Дополнительные шрифты для разных языков -->
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo-container">
+                <img src="meta_logo.jpg" alt="Meta Creator Logo Dark" class="logo logo-dark">
+                <img src="meta_logo_white.jpg" alt="Meta Creator Logo Light" class="logo logo-light">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" data-i18n="nav.home"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#features" data-i18n="nav.features"><i class="fa-solid fa-wand-magic-sparkles"></i> Features</a></li>
+                <li><a href="#create" data-i18n="nav.create"><i class="fa-solid fa-code"></i> Create</a></li>
+                <li><a href="#showcase" data-i18n="nav.showcase"><i class="fa-solid fa-gamepad"></i> Showcase</a></li>
+                <li>
+                    <div class="language-selector">
+                        <button class="language-btn">
+                            <i class="fa-solid fa-globe"></i>
+                            <span class="current-lang">EN</span>
+                        </button>
+                        <div class="language-dropdown">
+                            <a href="#" data-lang="en" class="active">
+                                <img src="https://flagcdn.com/w40/gb.png" alt="English">
+                                English
+                            </a>
+                            <a href="#" data-lang="ru">
+                                <img src="https://flagcdn.com/w40/ru.png" alt="Русский">
+                                Русский
+                            </a>
+                            <a href="#" data-lang="de">
+                                <img src="https://flagcdn.com/w40/de.png" alt="Deutsch">
+                                Deutsch
+                            </a>
+                            <a href="#" data-lang="fr">
+                                <img src="https://flagcdn.com/w40/fr.png" srcset="https://flagcdn.com/w80/fr.png 2x" alt="Français">
+                                Français
+                            </a>
+                            <a href="#" data-lang="es">
+                                <img src="https://flagcdn.com/w40/es.png" alt="Español">
+                                Español
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button id="theme-toggle" class="theme-toggle">
+                        <i class="fa-solid fa-moon theme-toggle-icon"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 data-i18n="hero.title">Meta Creator</h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Create Your Dream Minecraft Launcher</p>
+                <div class="hero-description">
+                    <p data-i18n="hero.description">Design, build, and distribute your custom Minecraft launcher with powerful tools and endless possibilities</p>
+                </div>
+                <div class="cta-group">
+                    <button class="cta-button primary" data-i18n="hero.start_button">
+                        <i class="fa-solid fa-rocket"></i> Start Creating
+                    </button>
+                    <button class="cta-button secondary" data-i18n="hero.examples_button">
+                        <i class="fa-solid fa-eye"></i> View Examples
+                    </button>
+                </div>
+            </div>
+            <div class="hero-graphics">
+                <div class="floating-elements">
+                    <div class="minecraft-element"></div>
+                    <div class="launcher-preview"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2 data-i18n="features.title">Powerful Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                    </div>
+                    <h3 data-i18n="features.custom_design.title">Custom Design</h3>
+                    <p data-i18n="features.custom_design.description">Create a unique look with our advanced theming system</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-puzzle-piece"></i>
+                        </div>
+                    </div>
+                    <h3 data-i18n="features.mod_integration.title">Mod Integration</h3>
+                    <p data-i18n="features.mod_integration.description">Seamlessly manage and distribute mod packs</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                    </div>
+                    <h3 data-i18n="features.secure_login.title">Secure Login</h3>
+                    <p data-i18n="features.secure_login.description">Built-in authentication and user management</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                    </div>
+                    <h3 data-i18n="features.auto_updates.title">Auto Updates</h3>
+                    <p data-i18n="features.auto_updates.description">Keep your launcher and mods up to date</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="create" class="create">
+            <h2 data-i18n="create.title">Create Your Launcher</h2>
+            <div class="create-container">
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3 data-i18n="create.step1.title"><i class="fa-solid fa-paintbrush"></i> Design</h3>
+                            <p data-i18n="create.step1.description">Choose your theme and customize every detail</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3 data-i18n="create.step2.title"><i class="fa-solid fa-gear"></i> Configure</h3>
+                            <p data-i18n="create.step2.description">Set up your mods and server connections</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3 data-i18n="create.step3.title"><i class="fa-solid fa-paper-plane"></i> Deploy</h3>
+                            <p data-i18n="create.step3.description">Share your launcher with the world</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="create-preview">
+                    <div class="preview-window">
+                        <div class="preview-header">
+                            <span class="preview-dot"></span>
+                            <span class="preview-dot"></span>
+                            <span class="preview-dot"></span>
+                        </div>
+                        <div class="preview-content">
+                            <div class="preview-launcher"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="showcase" class="showcase">
+            <h2 data-i18n="showcase.title">Featured Launchers</h2>
+            <div class="showcase-grid">
+                <div class="showcase-card">
+                    <div class="showcase-image">
+                        <i class="fa-solid fa-compass showcase-icon"></i>
+                    </div>
+                    <div class="showcase-content">
+                        <h3 data-i18n="showcase.adventure.title">Adventure Pack</h3>
+                        <p data-i18n="showcase.adventure.description">Exploration focused launcher with custom mods</p>
+                        <button class="showcase-btn" data-i18n="showcase.view_details">
+                            <i class="fa-solid fa-arrow-right"></i> View Details
+                        </button>
+                    </div>
+                </div>
+                <div class="showcase-card">
+                    <div class="showcase-image">
+                        <i class="fa-solid fa-microchip showcase-icon"></i>
+                    </div>
+                    <div class="showcase-content">
+                        <h3 data-i18n="showcase.tech.title">Tech Master</h3>
+                        <p data-i18n="showcase.tech.description">Industrial and technology mod collection</p>
+                        <button class="showcase-btn" data-i18n="showcase.view_details">
+                            <i class="fa-solid fa-arrow-right"></i> View Details
+                        </button>
+                    </div>
+                </div>
+                <div class="showcase-card">
+                    <div class="showcase-image">
+                        <i class="fa-solid fa-wand-sparkles showcase-icon"></i>
+                    </div>
+                    <div class="showcase-content">
+                        <h3 data-i18n="showcase.magic.title">Magic Realms</h3>
+                        <p data-i18n="showcase.magic.description">Magic and fantasy themed launcher</p>
+                        <button class="showcase-btn" data-i18n="showcase.view_details">
+                            <i class="fa-solid fa-arrow-right"></i> View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="meta_logo.jpg" alt="Meta Creator Logo Dark" class="logo logo-dark">
+                <img src="meta_logo_white.jpg" alt="Meta Creator Logo Light" class="logo logo-light">
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4><i class="fa-solid fa-cube"></i> <span data-i18n="footer.product">Product</span></h4>
+                    <ul>
+                        <li><a href="#features"><i class="fa-solid fa-star"></i> <span data-i18n="footer.features">Features</span></a></li>
+                        <li><a href="#create"><i class="fa-solid fa-code"></i> <span data-i18n="footer.create">Create</span></a></li>
+                        <li><a href="#showcase"><i class="fa-solid fa-gamepad"></i> <span data-i18n="footer.showcase">Showcase</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4><i class="fa-solid fa-users"></i> <span data-i18n="footer.community">Community</span></h4>
+                    <ul>
+                        <li>
+                            <a href="https://t.me/harmony_launcher" target="_blank" rel="noopener">
+                                <i class="fa-brands fa-telegram"></i> Telegram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Artyom151-r" target="_blank" rel="noopener">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#discord" class="coming-soon">
+                                <i class="fa-brands fa-discord"></i> Discord
+                                <span class="badge" data-i18n="footer.coming_soon">Coming Soon</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/harmony_launcher" target="_blank" rel="noopener">
+                                <i class="fa-solid fa-newspaper"></i> <span data-i18n="footer.blog">Blog & Updates</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Meta Creator. <span data-i18n="footer.rights">All rights reserved</span>.</p>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        const themeIcon = document.querySelector('.theme-toggle-icon');
+
+        themeToggle.addEventListener('click', () => {
+            if (html.getAttribute('data-theme') === 'dark') {
+                html.setAttribute('data-theme', 'light');
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+            } else {
+                html.setAttribute('data-theme', 'dark');
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+            }
+        });
+
+        // Language selector functionality
+        const languageBtn = document.querySelector('.language-btn');
+        const languageDropdown = document.querySelector('.language-dropdown');
+        const currentLang = document.querySelector('.current-lang');
+
+        languageBtn.addEventListener('click', () => {
+            languageDropdown.classList.toggle('show');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!languageBtn.contains(e.target)) {
+                languageDropdown.classList.remove('show');
+            }
+        });
+
+        // Handle language selection
+        const languageLinks = document.querySelectorAll('.language-dropdown a');
+        languageLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const lang = link.getAttribute('data-lang');
+                currentLang.textContent = lang.toUpperCase();
+                
+                // Remove active class from all links
+                languageLinks.forEach(l => l.classList.remove('active'));
+                // Add active class to selected language
+                link.classList.add('active');
+                
+                // Change HTML lang attribute
+                document.documentElement.lang = lang;
+                
+                // Update translations
+                updateLanguage(lang);
+                
+                languageDropdown.classList.remove('show');
+            });
+        });
+    </script>
+</body>
+</html> 
